@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f8fafc"><meta name="description" content="Uzbek, Russian and English to Arabic phrasebook with Fusha and Saudi dialect.">
+<link rel="manifest" href="./manifest.webmanifest"><link rel="icon" href="./icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="./styles.css"><title>Saudi Phrasebook</title>
+</head>
+<body>
+<header class="top"><a class="brand" href="./"><span class="mark">س</span><span>SAUDI <b>PHRASEBOOK</b><small id="tagline">Саудия учун кундалик иборалар</small></span></a><button id="install" class="install hidden">Ўрнатиш</button></header>
+<main>
+<section class="hero"><div class="eyebrow" id="eyebrow">АРАБ ТИЛИ • САУДИЯ</div><h1 id="headline">Саудияда ўзингизни эркинроқ ҳис қилинг.</h1><p id="intro">Керакли иборалар — фусҳа ва саудия лаҳжасида, бир жойда.</p>
+<div class="controls"><label><span id="languageLabel">Таржима тили</span><select id="language"><option value="uz">Ўзбекча</option><option value="ru">Русский</option><option value="en">English</option></select></label><label><span id="dialectLabel">Арабча шакл</span><select id="dialect"><option value="both">Иккаласи</option><option value="f">Фусҳа</option><option value="s">Саудия лаҳжаси</option></select></label></div>
+</section>
+<section class="searchrow"><div class="searchbox"><span>⌕</span><input id="search" type="search" placeholder="Ибора, арабча ёки талаффуз бўйича қидириш…"></div><button id="favOnly" class="filter">♡ <span id="favText">Сақланганлар</span></button></section>
+<nav id="categories" class="categories" aria-label="Categories"></nav>
+<div class="results-head"><div><span class="eyebrow" id="resultsLabel">ИБОРАЛАР</span><h2 id="resultsTitle">Керакли иборани танланг</h2></div><span id="count" class="count"></span></div>
+<section id="phrases" class="phrases" aria-live="polite"></section>
+<footer><p id="footnote">Эслатма: саудия лаҳжаси ҳудудга қараб фарқ қилиши мумкин. Иборалар ва талаффуз маҳаллий тил эгаси томонидан текширилиши керак.</p><span>SAUDI PHRASEBOOK · v0.1</span></footer>
+</main>
+<div id="toast" class="toast" role="status"></div>
+<script src="./app.js" defer></script>
+</body></html>
